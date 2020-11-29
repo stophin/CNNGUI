@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\common">
+      <UniqueIdentifier>{838dbb39-4a9b-485c-87f5-c55fce2a5138}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\platform">
+      <UniqueIdentifier>{944b54e4-4863-4e37-8369-eb0edd618ffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\NN">
+      <UniqueIdentifier>{04371d8d-640a-4905-b55f-b1e1ce0068bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\MultiLinkList.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\ELibrary.h">
+      <Filter>头文件\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Network.h">
+      <Filter>头文件\NN</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Neural.h">
+      <Filter>头文件\NN</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Layer.h">
+      <Filter>头文件\NN</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\CommonDefine.h">
+      <Filter>头文件\NN</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\Convolute.h">
+      <Filter>头文件\NN</Filter>
+    </ClInclude>
+    <ClInclude Include="NN\mt19937ar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\EPaint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\EPoint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\Ball.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\BallSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\Graph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\GraphBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\Graphs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\GraphTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\GUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\GUIBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\GUIButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\GUIEditbox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\GUIFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\MultiMediaTimer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\Queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\Stack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\Timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\Vertex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph\VNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CNN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="common\MultiLinkList.cpp">
+      <Filter>头文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="NN\mt19937ar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\EPoint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\EPaint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\Ball.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\BallSet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\Graph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\GraphTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\GUIBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\GUIButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\GUIEditbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\GUIFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\MultiMediaTimer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\Queue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\Stack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\Timer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\Vertex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\VNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
