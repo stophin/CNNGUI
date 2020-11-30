@@ -1,5 +1,5 @@
 
-SRC_FILE=CNN.cpp NN/mt19937ar.cpp common/MultiLinkList.cpp platform/EPaint.cpp platform/EPoint.cpp
+SRC_FILE=CNN.cpp NN/mt19937ar.cpp common/MultiLinkList.cpp platform/EPaint.cpp platform/EPoint.cpp graph/Ball.cpp graph/BallSet.cpp graph/Graph.cpp graph/GraphTest.cpp graph/GUIBase.cpp graph/GUIButton.cpp graph/GUIEditbox.cpp graph/GUIFrame.cpp graph/MultiMediaTimer.cpp graph/Queue.cpp graph/Stack.cpp graph/Timer.cpp graph/Vertex.cpp graph/VNode.cpp
 LIB_FILE=-lgraphics -lgdiplus -limm32 -lmsimg32 -lole32 -loleaut32 -lwinmm -luuid -mwindows -mconsole
 
 linux_gru:

@@ -91,7 +91,7 @@ int initgraph()
 	initgraph_Waiting();
 	//build balls
 	if (NET.nets) {
-		G.Load(NET.nets);
+		G.Load(NET.nets, mygui.scrwd, mygui.scrht);
 		ball.Load(G.V);
 		ball.getBallPos(G);
 		NET.nets->trainRun = 1;//ÖĞ¶ÏÄ£Ê½

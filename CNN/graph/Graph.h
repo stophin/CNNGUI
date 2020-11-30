@@ -31,7 +31,7 @@ public:
 	void Load(const Graph& g,bool reverse=false,bool remainweight=false);
 	void Load(int num,bool random=false,bool dg=false,bool selfring=false,int degree=0);
 	void Load(string fname);
-	void Load(Network * n);
+	void Load(Network * n, GUITYPE w, GUITYPE h);
 	void Update(Network * n);
 
 	VNode& operator [](int i);
@@ -65,7 +65,7 @@ public:
 	int NextAdj(int v);
 	int DirectAdj(int v,int w) const;
 	int DirectAdjUniID(int v,int w) const;
-	ArcNode* Graph::Arc(int v, int w) const;
+	ArcNode* Arc(int v, int w) const;
 	int VInDeg(int v);
 	WTYPE Weight(int v,int w,bool equal=false) const;
 	WTYPE WeightUniID(int v,int w,bool equal=false) const;

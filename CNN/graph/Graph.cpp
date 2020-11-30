@@ -534,10 +534,23 @@ void Graph::Load(string fname)
 	CreateArrays();
 }
 
-void Graph::Load(Network * n)
+void Graph::Load(Network * n, GUITYPE w, GUITYPE h)
 {
 	VNode* newnode, *last = vnode;
 	Layer * layer = n->layers.link;
+	int nx = w / n->layers.linkcount;
+	int ny = 0;
+	if (layer) {
+		do {
+			if (layer->neurals.linkcount > ny) {
+				ny = layer->neurals.linkcount;
+			}
+			
+			layer = n->layers.next(layer);
+		} while(layer && layer != n->layers.link);
+	}
+	ny = h / ny;
+	layer = n->layers.link;
 	int posx = 0, posy = 0, nlayers = 0, ncounts = 0, nnodes = 0, lcounts = 0;
 	this->withPos = true;
 	this->withWeight = true;
@@ -579,7 +592,7 @@ void Graph::Load(Network * n)
 					newnode->v.pos.y = posy;
 					this->V++;
 					ncounts++;
-					posy += 70;
+					posy += ny;
 
 					VNode &node = *newnode;
 					Connector * conn = neural->conn.link;
@@ -617,7 +630,7 @@ void Graph::Load(Network * n)
 				} while (neural && neural != layer->neurals.link);
 			}
 			nlayers++;
-			posx += 250;
+			posx += nx;
 
 			layer = n->layers.next(layer);
 		} while (layer && layer !=n->layers.link);
